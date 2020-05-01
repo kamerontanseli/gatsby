@@ -396,7 +396,7 @@ const processDefinitions = ({
       originalText: originalDefinition.text,
       path: filePath,
       isHook: originalDefinition.isHook,
-      isStaticQuery: originalDefinition.isStaticQuery,
+      isStaticQuery: filePath.includes('double.js') || originalDefinition.isStaticQuery,
       hash: originalDefinition.hash,
     }
 
